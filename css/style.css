@@ -6,3 +6,73 @@
 
   font-family: "Merriweather", serif;
 }
+
+.wrapper {
+  max-width: 1900px;
+}
+
+/* Header */
+
+.header {
+  height: 913px; /* 965px - padding-top */
+  padding-top: 52px;
+
+  background: url(../img/header_bg.jpg) top left no-repeat;
+  /* background-size: cover; */
+}
+
+.header_navigation,
+.header h1,
+.header_line {
+  display: flex;
+  justify-content: flex-end;
+} 
+
+.header_navigation {
+  gap: 16px;
+  margin-bottom: 316px;
+}
+
+.header_navigation a {
+  padding: 16px 22px;
+
+  font-size: 18px;
+  font-weight: 400;
+  color: #787878;
+  text-decoration: none;
+
+  border: 1px solid transparent;
+}
+
+.header_navigation a:first-child,
+.header_navigation a:hover {
+  border: 1px solid #787878;
+
+  transition: border 1s ease-in-out;
+}
+
+.header h1 {
+  margin-bottom: 40px;
+
+  font-size: 40px;
+  font-weight: 300;
+  color: #7b7b7b;
+  text-align: center;
+}
+
+.header_line {
+  height: 33px;
+
+  background: url(../img/header_line.png) center right no-repeat;
+}
+
+.header_navigation,
+.header h1 {
+  margin-right: 150px;
+}
+
+.header_line {
+  margin-right: 287px;
+}
+
+/*  */
