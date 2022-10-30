@@ -7,6 +7,10 @@
   font-family: "Merriweather", serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   max-width: 1900px;
 }
@@ -60,7 +64,7 @@
   text-align: center;
 }
 
-.header__line {
+.line {
   height: 33px;
 
   background: url(../img/line.png) center right no-repeat;
@@ -89,7 +93,8 @@
   display: flex;
   justify-content: center;
   gap: 185px;
-  padding: 67px 0 87px;
+  height: 229px; /* 383px - 67px - 87px */
+  padding: 67px 20px 87px;
 
   background: url(../img/trends_bg.jpg) center no-repeat;
 }
@@ -98,6 +103,8 @@
   padding-top: 116px;
 
   text-align: center;
+
+  overflow: hidden;
 }
 
 .trends__item:first-child {
@@ -114,7 +121,7 @@
   background: url(../img/trends_3.png) top center no-repeat;
 }
 
-.trends h3 {
+.trends__item h3 {
   margin-bottom: 31px;
 
   font-size: 18px;
@@ -124,7 +131,7 @@
   text-transform: uppercase;
 }
 
-.trends p {
+.trends__item p {
   font-size: 16px;
   font-weight: 300;
   line-height: 18px;
@@ -132,3 +139,95 @@
 }
 
 /* Specials */
+
+.specials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0 104px;
+
+  background-color: #fff;
+}
+
+.specials h2 {
+  margin-bottom: 33px;
+
+  font-size: 40px;
+  line-height: 55px;
+  font-weight: 300;
+  color: #3c3c3c;
+}
+
+.specials__line {
+  width: 100%;
+  margin-bottom: 56px;
+
+  background-position: center;
+}
+
+.specials__offers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 10.84%; /* 206px */
+}
+
+.specials__offers img,
+.specials__offers .item {
+  display: flex;
+  width: 248px;
+  height: 248px;
+}
+
+.specials__offers .item {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+
+  background-color: #f8f8f8;
+}
+
+.specials__offers .item h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #3c3c3c;
+}
+
+.item__line {
+  width: 88px;
+  height: 1px;
+
+  background-color: #3c3c3c;
+}
+
+.specials__offers .item p {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 300;
+  color: #3c3c3c;
+  text-align: center;
+}
+
+.specials__offers .item h3,
+.specials__offers .item p,
+.item__line {
+  margin-bottom: 16px;
+}
+
+.specials__offers .item p:last-child {
+  margin-bottom: 0;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.specials__offers img:hover,
+.specials__offers .item:hover {
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out;
+}
+
+/* About */
+
