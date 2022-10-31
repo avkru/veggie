@@ -13,6 +13,7 @@ html {
 
 .wrapper {
   max-width: 1900px;
+  margin: 0 auto;
 }
 
 /* Header */
@@ -231,3 +232,46 @@ html {
 
 /* About */
 
+.about {
+  display: flex;
+  height: 967px;
+
+  background: url(../img/about_bg.png) center right no-repeat #eeefef;
+}
+
+.about__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+  margin-left: 10.73%; /* 204px */
+
+  color: #3c3c3c;
+  text-align: center;
+
+  background: url(../img/signature.png) bottom right no-repeat;
+}
+
+.about__wrapper h2 {
+  margin-bottom: 32px;
+
+  font-size: 40px;
+  line-height: 55px;
+  font-weight: 300;
+}
+
+.about__line {
+  width: 100%;
+  margin-bottom: 58px;
+
+  background-position: center;
+}
+
+.about__wrapper p {
+  font-size: 30px;
+  line-height: 54px;
+  font-weight: 300;
+}
+
+/* Menu */
