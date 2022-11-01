@@ -275,3 +275,86 @@ html {
 }
 
 /* Menu */
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*height: 811px;*/ /* 965px - 69px - 85px */
+  padding: 69px 20px 85px;
+
+  background-color: #fff;
+}
+
+.menu h2 {
+  margin-bottom: 32px;
+
+  font-size: 40px;
+  line-height: 55px;
+  font-weight: 300;
+  color: #3c3c3c;
+}
+
+.menu__line {
+  width: 100%;
+  margin-bottom: 52px;
+
+  background-position: center;
+}
+
+.menu__navigation {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 84px;
+}
+
+.menu__navigation a {
+  padding: 16px 22px;
+
+  font-size: 18px;
+  /* line-height: 85px; */
+  color: #3c3c3c;
+  text-decoration: none;
+
+  border: 1px solid transparent;
+}
+
+.menu__navigation a:hover,
+.menu__navigation a:first-child {
+  border: 1px solid #3c3c3c;
+
+  transition: border 1s ease-in-out;
+}
+
+.menu__item {
+  margin-bottom: 41px;
+
+  font-size: 18px;
+  font-weight: 300;
+  color: #3c3c3c;
+}
+
+.menu__item:last-child {
+  margin: 0;
+}
+
+.menu__item a {
+  color: #3c3c3c;
+  text-decoration: none;
+}
+
+.menu__item a:hover {
+  color: #000;
+}
+
+.menu__item .ingredients {
+  font-style: italic;
+  font-size: 14px;
+}
+
+.menu__inner {
+  display: flex;
+  gap: 11.47vw; /* 218px */
+}
+
+/* Contact */
